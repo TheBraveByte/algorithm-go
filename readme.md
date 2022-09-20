@@ -6,7 +6,7 @@
 3. implement the best case and worst case scenario
 
 # Technology use 
-1. Go Complier 1.18.3
+1. Go Complier 1.18.3+
 2. Go default install tools and packages
 3. Go Built-in packages
 4. go module
