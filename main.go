@@ -6,6 +6,7 @@ import (
 
 	"github.com/yusuf/algorithm-go/binary_search"
 	"github.com/yusuf/algorithm-go/hanoitower"
+	"github.com/yusuf/algorithm-go/linkedlist"
 	"github.com/yusuf/algorithm-go/maxnumber"
 	"github.com/yusuf/algorithm-go/sorting"
 )
@@ -29,4 +30,17 @@ func main() {
 
 	fmt.Println()
 	log.Println(sorting.BubbleSort([]int{1, 2, 3, 5, 4, 7, 6, 9, 8}))
+
+	fmt.Println("Linkedlist Data structure implementation")
+	lt := linkedlist.Linkedlist{Lenght: 10, Head: nil, Tail: nil}
+	lt.InsertAtBeginning(45)
+	lt.InsertAtBeginning(22)
+	lt.InsertAtBeginning(12)
+	fmt.Println(lt.Display())
+	fmt.Println(lt.InsertAtRandom(0, 17))
+	fmt.Println(lt.Display())
+	lt.DeleteAtHead()
+	fmt.Println(lt.Display())
+	fmt.Println(lt.DeleteAtTail())
+	fmt.Println(lt.Display())
 }
